@@ -1,9 +1,11 @@
-.container-listas {
-    display: flex; /* Transforma o container em um flex container */
-    justify-content: space-around; /* Espalha as listas uniformemente */
+div {
+    display: flex;
+    gap: 10px
 }
 
-.lista-1, .lista-2 {
-    flex: 1; /* Faz com que cada lista ocupe 50% do espaço, permitindo alinhamento */
-    margin: 0 10px; /* Adiciona margem entre as listas */
+ul{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none;
 }
