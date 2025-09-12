@@ -1,0 +1,9 @@
+.h1{
+  color: blueviolet;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.p{
+  font-size: 4rem;
+  background-color: rgb(68, 19, 19);
+}

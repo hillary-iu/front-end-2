@@ -31,15 +31,16 @@ prodAdd.addEventListener('mousemove' , () => {
     prodAdd.style.backgraundColor = cor;
 })
 
-lista.forEach((item)  => {
-    //console.log(item)
-    item.addEventListener( 'click', (ev) => {
-        console.log(ev.target.innerText)
-        console.log(ev.target.parentElement)
-        pai = ev.target.parantElement;
-        filho = ev.target;
-        if (pai === prodComp){
-            prodAdd.appendChild(filho);
+lista.forEach((item, i)  => {   //a lista é todos os li  foreath eçe vai receber td que esta em baixo
+    console.log(i)
+    item.addEventListener( 'click', (ev) => {// ev é o evento e o evento é o click
+        console.log(ev);
+        const li = ev.target;//target é o elemento li é o pai
+        const ul = li.parentElement;//ul é o filho
+        if (ul === prodComp){
+            prodAdd.appendChild(li);
+        }else{
+            prodComp.appendChild(li)
         }
         
     })
